@@ -1,0 +1,9 @@
+const mongoose = require('mongoose');
+
+const destinationSchema = new mongoose.Schema({
+  name: String,
+  description: String,
+  img: String
+});
+
+module.exports = mongoose.model('Destination', destinationSchema);
